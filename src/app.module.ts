@@ -5,7 +5,6 @@ import { UserModule } from './modules/users/user.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Connection } from 'mongoose';
-import { env } from './config/env.service';
 
 
 @Module({
