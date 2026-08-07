@@ -15,11 +15,14 @@ export class User {
     @Prop({ type: String })
     lastName!: string;
 
-    @Prop({ type: String })
-    profilePic?: string;
-
     @Prop({ type: String, required: true, unique: true })
     email!: string;
+
+    @Prop({type :String, required: true})
+    phone!: string;
+
+    @Prop({ type: String })
+    profilePic?: string;
 
     @Prop({ type: String, required: true, enum: UserGender })
     gender!: UserGender;
@@ -32,8 +35,6 @@ export class User {
     })
     role!: UserRole;
 
-    @Prop({ type: String, required: true, unique: true })
-    phone!: string;
 
     @Prop({ type: String, required: true })
     password!: string;
